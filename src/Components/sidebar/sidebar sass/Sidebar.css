@@ -1,0 +1,88 @@
+.sidebar-menu {
+  flex: 0.17;
+  padding-left: 1rem;
+  row-gap: 1rem;
+  padding-left: 2rem;
+}
+.sidebar-menu .home-shorts-subscription {
+  display: grid;
+  justify-items: flex-start;
+  align-items: center;
+  row-gap: 1rem;
+  margin-bottom: 2rem;
+}
+.sidebar-menu .home-shorts-subscription a {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  text-decoration: none;
+  font-family: var(--main-font-family);
+  font-weight: var(--bold-font-weight);
+  color: var(--grey-font-color);
+  font-size: 1.1rem;
+  scroll-snap-align: start;
+}
+.sidebar-menu .home-shorts-subscription .sidebarmenu {
+  width: 20px;
+  -o-object-fit: fill;
+     object-fit: fill;
+}
+.sidebar-menu .home-shorts-subscription #subscription {
+  justify-self: center;
+}
+.sidebar-menu .home-shorts-subscription hr {
+  border: 1px solid whitesmoke;
+  height: 0.2rem;
+  width: 50%;
+  background-color: black;
+}
+.sidebar-menu .home-shorts-subscription a:hover {
+  background-color: rgb(179, 178, 178);
+  border-radius: 0.4rem;
+  width: 100%;
+  pointer-events: none;
+}
+.sidebar-menu .home-shorts-subscription span {
+  font-family: var(--main-font-family);
+  font-weight: var(--bold-font-weight);
+  font-size: 1.1rem;
+}
+.sidebar-menu .library-history-watch {
+  display: grid;
+  justify-items: flex-start;
+  align-items: center;
+  row-gap: 1rem;
+  margin-bottom: 2rem;
+}
+.sidebar-menu .library-history-watch a {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  text-decoration: none;
+  font-family: var(--main-font-family);
+  font-weight: var(--bold-font-weight);
+  color: var(--grey-font-color);
+  font-size: 1.1rem;
+}
+.sidebar-menu .library-history-watch a:hover {
+  background-color: rgb(179, 178, 178);
+  border-radius: 0.4rem;
+  width: 100%;
+  pointer-events: none;
+}
+.sidebar-menu .library-history-watch span {
+  font-family: var(--main-font-family);
+  font-weight: var(--bold-font-weight);
+  font-size: 1.1rem;
+}
+.sidebar-menu .library-history-watch h1 {
+  font-family: var(--main-font-family);
+  font-weight: var(--bold-font-weight);
+  font-size: 1.1rem;
+}
+.sidebar-menu .library-history-watch hr {
+  border: 1px solid whitesmoke;
+  height: 0.2rem;
+  width: 50%;
+  background-color: black;
+}/*# sourceMappingURL=Sidebar.css.map */

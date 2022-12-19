@@ -1,0 +1,101 @@
+header  {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #fff;
+   .header-section{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 2rem;
+        .icon-logo{
+            display: flex;
+            align-items: center;
+            img{
+               height: 75px;
+                object-fit: fill;
+            }
+        }
+       
+    .search-bar{
+            display: flex;
+            align-items: center;
+            width: 40%;
+            gap: 1rem;
+            justify-content: center;
+            .search-icon{
+                display: flex;
+                align-items: center;
+                 flex: 1;
+                 border: 1px solid rgb(134, 133, 133);
+                 border-radius: 1.2rem;
+                 justify-content: center;
+                input{
+                    width: 100%;
+                    color: var(--whitemode-color-font);
+                    font-size: var(--main-font-size);
+                    font-family: var(--main-font-family);
+                    padding: 0.5rem 1rem;
+                    border: none !important;
+                    outline: none;
+                }
+                .searchicon{
+                            border-radius: 0px 20px 20px 2px;
+                            background-color: whitesmoke;
+                            width: 35px;
+                            height: 45px;
+                            object-fit: fill;
+                        }
+                      
+            }
+            .mic{
+                width: 35px;
+                height: 45px;
+                object-fit: fill;
+                background-color: whitesmoke;
+                border-radius: 50%;
+            }
+        }
+         .notification-bell{
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+          }
+          .video-call-icon{
+            width: 35px;
+            height: 45px;
+            object-fit: fill;
+          }
+         
+   }
+}
+
+// dark mode
+.darkmode-section{
+   display: flex;
+     .darkmode{
+        font-family: var(--main-font-family);
+        font-size: 1rem;
+        font-weight: 600;
+        font-style: normal;
+     }
+   .darkmode-option{
+    display: inline-flex;
+    gap: .3rem;
+      #on{
+        font-family: var(--main-font-family);
+        font-size: 1rem;
+        font-weight: 600;
+        font-style: normal;
+        cursor: pointer;
+      }
+      #off{
+        font-family: var(--main-font-family);
+        font-size: 1rem;
+        font-weight: 600;
+        font-style: normal;
+        cursor: pointer;
+      }
+   }
+}

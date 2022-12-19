@@ -1,0 +1,101 @@
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #fff;
+}
+header .header-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 2rem;
+}
+header .header-section .icon-logo {
+  display: flex;
+  align-items: center;
+}
+header .header-section .icon-logo img {
+  height: 75px;
+  -o-object-fit: fill;
+     object-fit: fill;
+}
+header .header-section .search-bar {
+  display: flex;
+  align-items: center;
+  width: 40%;
+  gap: 1rem;
+  justify-content: center;
+}
+header .header-section .search-bar .search-icon {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  border: 1px solid rgb(134, 133, 133);
+  border-radius: 1.2rem;
+  justify-content: center;
+}
+header .header-section .search-bar .search-icon input {
+  width: 100%;
+  color: var(--whitemode-color-font);
+  font-size: var(--main-font-size);
+  font-family: var(--main-font-family);
+  padding: 0.5rem 1rem;
+  border: none !important;
+  outline: none;
+}
+header .header-section .search-bar .search-icon .searchicon {
+  border-radius: 0px 20px 20px 2px;
+  background-color: whitesmoke;
+  width: 35px;
+  height: 45px;
+  -o-object-fit: fill;
+     object-fit: fill;
+}
+header .header-section .search-bar .mic {
+  width: 35px;
+  height: 45px;
+  -o-object-fit: fill;
+     object-fit: fill;
+  background-color: whitesmoke;
+  border-radius: 50%;
+}
+header .header-section .notification-bell {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+header .header-section .video-call-icon {
+  width: 35px;
+  height: 45px;
+  -o-object-fit: fill;
+     object-fit: fill;
+}
+
+.darkmode-section {
+  display: flex;
+}
+.darkmode-section .darkmode {
+  font-family: var(--main-font-family);
+  font-size: 1rem;
+  font-weight: 600;
+  font-style: normal;
+}
+.darkmode-section .darkmode-option {
+  display: inline-flex;
+  gap: 0.3rem;
+}
+.darkmode-section .darkmode-option #on {
+  font-family: var(--main-font-family);
+  font-size: 1rem;
+  font-weight: 600;
+  font-style: normal;
+  cursor: pointer;
+}
+.darkmode-section .darkmode-option #off {
+  font-family: var(--main-font-family);
+  font-size: 1rem;
+  font-weight: 600;
+  font-style: normal;
+  cursor: pointer;
+}/*# sourceMappingURL=Header.css.map */

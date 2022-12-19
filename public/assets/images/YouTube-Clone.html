@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<!-- saved from url=(0022)http://127.0.0.1:5173/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <script type="module">
+import RefreshRuntime from "/@react-refresh"
+RefreshRuntime.injectIntoGlobalHook(window)
+window.$RefreshReg$ = () => {}
+window.$RefreshSig$ = () => (type) => type
+window.__vite_plugin_react_preamble_installed__ = true
+</script>
+
+    <script type="module" src="./YouTube-Clone_files/client"></script>
+
+    
+    <link rel="icon" type="image/svg+xml" href="http://127.0.0.1:5173/YouTube-Icon.svg">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube-Clone</title>
+  <style type="text/css" data-vite-dev-id="D:/Reactjs/youtube-clone/src/App.css">@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Roboto:wght@400;500;700;900&display=swap');
+
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+:root{
+    --main-font-family: 'Roboto', sans-serif;
+    --main-font-size: 16px;
+    --whitemode-color-font: '#000';
+    --blackmode-color-font: '#fff';
+    --normal-font-weight: 400;
+    --bold-font-weight: 700;
+    --grey-font-color: 'whitesmoke'
+}
+</style><style type="text/css" data-vite-dev-id="D:/Reactjs/youtube-clone/src/Components/Header/Header Sass/Header.css">header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #fff;
+}
+header .header-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 2rem;
+}
+header .header-section .icon-logo {
+  display: flex;
+  align-items: center;
+}
+header .header-section .icon-logo img {
+  height: 75px;
+  -o-object-fit: fill;
+     object-fit: fill;
+}
+header .header-section .search-bar {
+  display: flex;
+  align-items: center;
+  width: 40%;
+  gap: 1rem;
+  justify-content: center;
+}
+header .header-section .search-bar .search-icon {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  border: 1px solid rgb(134, 133, 133);
+  border-radius: 1.2rem;
+  justify-content: center;
+}
+header .header-section .search-bar .search-icon input {
+  width: 100%;
+  color: var(--whitemode-color-font);
+  font-size: var(--main-font-size);
+  font-family: var(--main-font-family);
+  padding: 0.5rem 1rem;
+  border: none !important;
+  outline: none;
+}
+header .header-section .search-bar .search-icon .searchicon {
+  border-radius: 0px 20px 20px 2px;
+  background-color: whitesmoke;
+  width: 35px;
+  height: 45px;
+  -o-object-fit: fill;
+     object-fit: fill;
+}
+header .header-section .search-bar .mic {
+  width: 35px;
+  height: 45px;
+  -o-object-fit: fill;
+     object-fit: fill;
+  background-color: whitesmoke;
+  border-radius: 50%;
+}
+header .header-section .notification-bell {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+header .header-section .video-call-icon {
+  width: 35px;
+  height: 45px;
+  -o-object-fit: fill;
+     object-fit: fill;
+}                                      </style><style type="text/css" data-vite-dev-id="D:/Reactjs/youtube-clone/src/Components/sidebar/sidebar sass/Sidebar.css">.sidebar-menu {
+  flex: 0.17;
+  padding-left: 1rem;
+  row-gap: 1rem;
+  padding-left: 2rem;
+}
+.sidebar-menu .home-shorts-subscription {
+  display: grid;
+  justify-items: flex-start;
+  align-items: center;
+  row-gap: 1rem;
+  margin-bottom: 2rem;
+}
+.sidebar-menu .home-shorts-subscription a {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  text-decoration: none;
+  font-family: var(--main-font-family);
+  font-weight: var(--bold-font-weight);
+  color: var(--grey-font-color);
+  font-size: 1.1rem;
+  scroll-snap-align: start;
+}
+.sidebar-menu .home-shorts-subscription .sidebarmenu {
+  width: 20px;
+  -o-object-fit: fill;
+     object-fit: fill;
+}
+.sidebar-menu .home-shorts-subscription #subscription {
+  justify-self: center;
+}
+.sidebar-menu .home-shorts-subscription hr {
+  border: 1px solid whitesmoke;
+  height: 0.2rem;
+  width: 50%;
+  background-color: black;
+}
+.sidebar-menu .home-shorts-subscription a:hover {
+  background-color: rgb(179, 178, 178);
+  border-radius: 0.4rem;
+  width: 100%;
+  pointer-events: none;
+}
+.sidebar-menu .home-shorts-subscription span {
+  font-family: var(--main-font-family);
+  font-weight: var(--bold-font-weight);
+  font-size: 1.1rem;
+}
+.sidebar-menu .library-history-watch {
+  display: grid;
+  justify-items: flex-start;
+  align-items: center;
+  row-gap: 1rem;
+  margin-bottom: 2rem;
+}
+.sidebar-menu .library-history-watch a {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  text-decoration: none;
+  font-family: var(--main-font-family);
+  font-weight: var(--bold-font-weight);
+  color: var(--grey-font-color);
+  font-size: 1.1rem;
+}
+.sidebar-menu .library-history-watch a:hover {
+  background-color: rgb(179, 178, 178);
+  border-radius: 0.4rem;
+  width: 100%;
+  pointer-events: none;
+}
+.sidebar-menu .library-history-watch span {
+  font-family: var(--main-font-family);
+  font-weight: var(--bold-font-weight);
+  font-size: 1.1rem;
+}
+.sidebar-menu .library-history-watch h1 {
+  font-family: var(--main-font-family);
+  font-weight: var(--bold-font-weight);
+  font-size: 1.1rem;
+}
+.sidebar-menu .library-history-watch hr {
+  border: 1px solid whitesmoke;
+  height: 0.2rem;
+  width: 50%;
+  background-color: black;
+}                                       </style><style type="text/css" data-vite-dev-id="D:/Reactjs/youtube-clone/src/Components/Videocontent/Videocontent sass/videocontent.css">.video-content {
+  display: flex;
+  flex: 0.8;
+  justify-content: center;
+}
+.video-content .video-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  width: 100%;
+  -moz-column-gap: 1.5rem;
+       column-gap: 1.5rem;
+}
+.video-content .video-gallery .youtube-thumbnail {
+  width: 100%;
+}
+.video-content .video-gallery .youtube-thumbnail img {
+  width: 90%;
+  height: 55%;
+  -o-object-fit: fill;
+     object-fit: fill;
+  border-radius: 1.2rem;
+}
+.video-content .video-gallery .youtube-thumbnail .youtube-thumbnail-title {
+  min-height: 120px;
+}
+.video-content .video-gallery .youtube-thumbnail .youtube-thumbnail-title h3 {
+  font-size: 0.9rem;
+  font-family: var(--main-font-family);
+  line-height: 1.5;
+  padding-right: 4rem;
+  font-weight: 700;
+}
+.video-content .video-gallery .youtube-thumbnail .youtube-thumbnail-title p {
+  font-size: 0.8rem;
+  font-family: var(--main-font-family);
+  font-weight: 600;
+  line-height: 2.5;
+}
+.video-content .video-gallery .youtube-thumbnail .youtube-thumbnail-title .channel-views-time {
+  display: flex;
+  align-items: center;
+  gap: 0.2rem;
+}
+.video-content .video-gallery .youtube-thumbnail .youtube-thumbnail-title .channel-views-time p {
+  font-size: 0.9rem;
+  font-family: var(--main-font-family);
+  font-weight: 700;
+  line-height: 1.5;
+}
+.video-content .video-gallery .youtube-thumbnail .youtube-thumbnail-title .channel-views-time span {
+  font-size: 2rem;
+  position: relative;
+  bottom: 8px;
+}
+.video-content .video-gallery .video-gallery::-webkit-scrollbar {
+  width: 2px;
+}                                            </style><style type="text/css" data-vite-dev-id="D:/Reactjs/youtube-clone/src/Components/Main/Main sass/Main.css">.main-content-section-sidebar {
+  display: flex;
+  flex-direction: row;
+  margin-top: 6rem;
+}                                    </style><style type="text/css" data-vite-dev-id="D:/Reactjs/youtube-clone/src/index.css"></style><style data-emotion="css" data-s="">.css-i4bv87-MuiSvgIcon-root{-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;width:1em;height:1em;display:inline-block;fill:currentColor;-webkit-flex-shrink:0;-ms-flex-negative:0;flex-shrink:0;-webkit-transition:fill 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;transition:fill 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;font-size:1.5rem;}</style></head>
+  <body>
+    <div id="root"><div class="App"><div><div class="sidebar"><div class="youtube-header"><div class="header"><header><nav><div class="header-section"><div class="icon-logo"><svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root" focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="MenuIcon"><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"></path></svg><img src="./YouTube-Clone_files/YouTube-Logo.png" alt=""></div><div class="search-bar"><div class="search-icon"><input type="text" placeholder="Search" value=""><svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium searchicon css-i4bv87-MuiSvgIcon-root" focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="SearchIcon"><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"></path></svg></div><div class="mic-icon"><svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium mic css-i4bv87-MuiSvgIcon-root" focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="MicIcon"><path d="M12 14c1.66 0 2.99-1.34 2.99-3L15 5c0-1.66-1.34-3-3-3S9 3.34 9 5v6c0 1.66 1.34 3 3 3zm5.3-3c0 3-2.54 5.1-5.3 5.1S6.7 14 6.7 11H5c0 3.41 2.72 6.23 6 6.72V21h2v-3.28c3.28-.48 6-3.3 6-6.72h-1.7z"></path></svg></div></div><div class="notification-bell"><svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium video-call-icon css-i4bv87-MuiSvgIcon-root" focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="VideoCallIcon"><path d="M17 10.5V7c0-.55-.45-1-1-1H4c-.55 0-1 .45-1 1v10c0 .55.45 1 1 1h12c.55 0 1-.45 1-1v-3.5l4 4v-11l-4 4zM14 13h-3v3H9v-3H6v-2h3V8h2v3h3v2z"></path></svg><svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium video-call-icon css-i4bv87-MuiSvgIcon-root" focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="NotificationsIcon"><path d="M12 22c1.1 0 2-.9 2-2h-4c0 1.1.89 2 2 2zm6-6v-5c0-3.07-1.64-5.64-4.5-6.32V4c0-.83-.67-1.5-1.5-1.5s-1.5.67-1.5 1.5v.68C7.63 5.36 6 7.92 6 11v5l-2 2v1h16v-1l-2-2z"></path></svg><svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium video-call-icon css-i4bv87-MuiSvgIcon-root" focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="AccountCircleIcon"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 4c1.93 0 3.5 1.57 3.5 3.5S13.93 13 12 13s-3.5-1.57-3.5-3.5S10.07 6 12 6zm0 14c-2.03 0-4.43-.82-6.14-2.88C7.55 15.8 9.68 15 12 15s4.45.8 6.14 2.12C16.43 19.18 14.03 20 12 20z"></path></svg></div></div></nav></header></div></div><div class="main-content-section-sidebar"><div class="sidebar-menu"><div class="scroll-menu"><div class="home-shorts-subscription"><a href="http://127.0.0.1:5173/"><svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium  sidebarmenu css-i4bv87-MuiSvgIcon-root" focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="CottageIcon"><path d="M12 3 6 7.58V6H4v3.11L1 11.4l1.21 1.59L4 11.62V21h7v-6h2v6h7v-9.38l1.79 1.36L23 11.4 12 3zm-2-2c0 1.66-1.34 3-3 3-.55 0-1 .45-1 1H4c0-1.66 1.34-3 3-3 .55 0 1-.45 1-1h2z"></path></svg><span>Home</span></a><a href="http://127.0.0.1:5173/shorts"><svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium  sidebarmenu css-i4bv87-MuiSvgIcon-root" focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="AppShortcutIcon"><path d="M17 18H7V6h10v1h2V3c0-1.1-.9-2-2-2H7c-1.1 0-2 .9-2 2v18c0 1.1.9 2 2 2h10c1.1 0 2-.9 2-2v-4h-2v1zm3.38-8.38L21 11l.62-1.38L23 9l-1.38-.62L21 7l-.62 1.38L19 9z"></path><path d="m16 8-1.25 2.75L12 12l2.75 1.25L16 16l1.25-2.75L20 12l-2.75-1.25zm5 5-.62 1.38L19 15l1.38.62L21 17l.62-1.38L23 15l-1.38-.62z"></path></svg>Shorts</a><a href="http://127.0.0.1:5173/subscripton"><svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium  sidebarmenu css-i4bv87-MuiSvgIcon-root" focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="SubscriptionsIcon" id="#subscription"><path d="M20 8H4V6h16v2zm-2-6H6v2h12V2zm4 10v8c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2v-8c0-1.1.9-2 2-2h16c1.1 0 2 .9 2 2zm-6 4-6-3.27v6.53L16 16z"></path></svg><span>Subscriptions</span></a><hr></div><div class="library-history-watch"><a href="http://127.0.0.1:5173/"><svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium  sidebarmenu css-i4bv87-MuiSvgIcon-root" focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="VideoLibraryIcon"><path d="M4 6H2v14c0 1.1.9 2 2 2h14v-2H4V6zm16-4H8c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-8 12.5v-9l6 4.5-6 4.5z"></path></svg><span>Home</span></a><a href="http://127.0.0.1:5173/shorts"><svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium  sidebarmenu css-i4bv87-MuiSvgIcon-root" focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="HistoryIcon"><path d="M13 3c-4.97 0-9 4.03-9 9H1l3.89 3.89.07.14L9 12H6c0-3.87 3.13-7 7-7s7 3.13 7 7-3.13 7-7 7c-1.93 0-3.68-.79-4.94-2.06l-1.42 1.42C8.27 19.99 10.51 21 13 21c4.97 0 9-4.03 9-9s-4.03-9-9-9zm-1 5v5l4.28 2.54.72-1.21-3.5-2.08V8H12z"></path></svg>Shorts</a><a href="http://127.0.0.1:5173/subscripton"><svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium  sidebarmenu css-i4bv87-MuiSvgIcon-root" focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="WatchLaterIcon"><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2zm4.2 14.2L11 13V7h1.5v5.2l4.5 2.7-.8 1.3z"></path></svg><span>Subscriptions</span></a><a href="http://127.0.0.1:5173/subscripton"><svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium  sidebarmenu css-i4bv87-MuiSvgIcon-root" focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="ThumbUpIcon"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"></path></svg><span>Subscriptions</span></a><hr></div><div class="library-history-watch"><h1>Explore</h1><a href="http://127.0.0.1:5173/"><svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium  sidebarmenu css-i4bv87-MuiSvgIcon-root" focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="WhatshotIcon"><path d="M13.5.67s.74 2.65.74 4.8c0 2.06-1.35 3.73-3.41 3.73-2.07 0-3.63-1.67-3.63-3.73l.03-.36C5.21 7.51 4 10.62 4 14c0 4.42 3.58 8 8 8s8-3.58 8-8C20 8.61 17.41 3.8 13.5.67zM11.71 19c-1.78 0-3.22-1.4-3.22-3.14 0-1.62 1.05-2.76 2.81-3.12 1.77-.36 3.6-1.21 4.62-2.58.39 1.29.59 2.65.59 4.04 0 2.65-2.15 4.8-4.8 4.8z"></path></svg><span>Trending</span></a><a href="http://127.0.0.1:5173/shorts"><svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium  sidebarmenu css-i4bv87-MuiSvgIcon-root" focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="MusicNoteIcon"><path d="M12 3v10.55c-.59-.34-1.27-.55-2-.55-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4V7h4V3h-6z"></path></svg>Music</a><a href="http://127.0.0.1:5173/subscripton"><svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium  sidebarmenu css-i4bv87-MuiSvgIcon-root" focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="SportsEsportsIcon"><path d="m21.58 16.09-1.09-7.66C20.21 6.46 18.52 5 16.53 5H7.47C5.48 5 3.79 6.46 3.51 8.43l-1.09 7.66C2.2 17.63 3.39 19 4.94 19c.68 0 1.32-.27 1.8-.75L9 16h6l2.25 2.25c.48.48 1.13.75 1.8.75 1.56 0 2.75-1.37 2.53-2.91zM11 11H9v2H8v-2H6v-1h2V8h1v2h2v1zm4-1c-.55 0-1-.45-1-1s.45-1 1-1 1 .45 1 1-.45 1-1 1zm2 3c-.55 0-1-.45-1-1s.45-1 1-1 1 .45 1 1-.45 1-1 1z"></path></svg><span>Gaming</span></a><a href="http://127.0.0.1:5173/subscripton"><svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium  sidebarmenu css-i4bv87-MuiSvgIcon-root" focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="EmojiEventsIcon"><path d="M19 5h-2V3H7v2H5c-1.1 0-2 .9-2 2v1c0 2.55 1.92 4.63 4.39 4.94.63 1.5 1.98 2.63 3.61 2.96V19H7v2h10v-2h-4v-3.1c1.63-.33 2.98-1.46 3.61-2.96C19.08 12.63 21 10.55 21 8V7c0-1.1-.9-2-2-2zM5 8V7h2v3.82C5.84 10.4 5 9.3 5 8zm14 0c0 1.3-.84 2.4-2 2.82V7h2v1z"></path></svg><span>Sports</span></a><hr></div><div class="library-history-watch"><h1>More From Youtube</h1><a href="http://127.0.0.1:5173/"><svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium  sidebarmenu css-i4bv87-MuiSvgIcon-root" focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="WhatshotIcon"><path d="M13.5.67s.74 2.65.74 4.8c0 2.06-1.35 3.73-3.41 3.73-2.07 0-3.63-1.67-3.63-3.73l.03-.36C5.21 7.51 4 10.62 4 14c0 4.42 3.58 8 8 8s8-3.58 8-8C20 8.61 17.41 3.8 13.5.67zM11.71 19c-1.78 0-3.22-1.4-3.22-3.14 0-1.62 1.05-2.76 2.81-3.12 1.77-.36 3.6-1.21 4.62-2.58.39 1.29.59 2.65.59 4.04 0 2.65-2.15 4.8-4.8 4.8z"></path></svg><span>Trending</span></a><a href="http://127.0.0.1:5173/shorts"><svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium  sidebarmenu css-i4bv87-MuiSvgIcon-root" focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="MusicNoteIcon"><path d="M12 3v10.55c-.59-.34-1.27-.55-2-.55-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4V7h4V3h-6z"></path></svg>Music</a><a href="http://127.0.0.1:5173/subscripton"><svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium  sidebarmenu css-i4bv87-MuiSvgIcon-root" focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="SportsEsportsIcon"><path d="m21.58 16.09-1.09-7.66C20.21 6.46 18.52 5 16.53 5H7.47C5.48 5 3.79 6.46 3.51 8.43l-1.09 7.66C2.2 17.63 3.39 19 4.94 19c.68 0 1.32-.27 1.8-.75L9 16h6l2.25 2.25c.48.48 1.13.75 1.8.75 1.56 0 2.75-1.37 2.53-2.91zM11 11H9v2H8v-2H6v-1h2V8h1v2h2v1zm4-1c-.55 0-1-.45-1-1s.45-1 1-1 1 .45 1 1-.45 1-1 1zm2 3c-.55 0-1-.45-1-1s.45-1 1-1 1 .45 1 1-.45 1-1 1z"></path></svg><span>Gaming</span></a><a href="http://127.0.0.1:5173/subscripton"><svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium  sidebarmenu css-i4bv87-MuiSvgIcon-root" focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="EmojiEventsIcon"><path d="M19 5h-2V3H7v2H5c-1.1 0-2 .9-2 2v1c0 2.55 1.92 4.63 4.39 4.94.63 1.5 1.98 2.63 3.61 2.96V19H7v2h10v-2h-4v-3.1c1.63-.33 2.98-1.46 3.61-2.96C19.08 12.63 21 10.55 21 8V7c0-1.1-.9-2-2-2zM5 8V7h2v3.82C5.84 10.4 5 9.3 5 8zm14 0c0 1.3-.84 2.4-2 2.82V7h2v1z"></path></svg><span>Sports</span></a><hr></div><div class="library-history-watch"><a href="http://127.0.0.1:5173/"><svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium  sidebarmenu css-i4bv87-MuiSvgIcon-root" focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="SettingsIcon"><path d="M19.14 12.94c.04-.3.06-.61.06-.94 0-.32-.02-.64-.07-.94l2.03-1.58c.18-.14.23-.41.12-.61l-1.92-3.32c-.12-.22-.37-.29-.59-.22l-2.39.96c-.5-.38-1.03-.7-1.62-.94l-.36-2.54c-.04-.24-.24-.41-.48-.41h-3.84c-.24 0-.43.17-.47.41l-.36 2.54c-.59.24-1.13.57-1.62.94l-2.39-.96c-.22-.08-.47 0-.59.22L2.74 8.87c-.12.21-.08.47.12.61l2.03 1.58c-.05.3-.09.63-.09.94s.02.64.07.94l-2.03 1.58c-.18.14-.23.41-.12.61l1.92 3.32c.12.22.37.29.59.22l2.39-.96c.5.38 1.03.7 1.62.94l.36 2.54c.05.24.24.41.48.41h3.84c.24 0 .44-.17.47-.41l.36-2.54c.59-.24 1.13-.56 1.62-.94l2.39.96c.22.08.47 0 .59-.22l1.92-3.32c.12-.22.07-.47-.12-.61l-2.01-1.58zM12 15.6c-1.98 0-3.6-1.62-3.6-3.6s1.62-3.6 3.6-3.6 3.6 1.62 3.6 3.6-1.62 3.6-3.6 3.6z"></path></svg><span>Creator Studio</span></a><a href="http://127.0.0.1:5173/shorts"><svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium  sidebarmenu css-i4bv87-MuiSvgIcon-root" focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="HistoryIcon"><path d="M13 3c-4.97 0-9 4.03-9 9H1l3.89 3.89.07.14L9 12H6c0-3.87 3.13-7 7-7s7 3.13 7 7-3.13 7-7 7c-1.93 0-3.68-.79-4.94-2.06l-1.42 1.42C8.27 19.99 10.51 21 13 21c4.97 0 9-4.03 9-9s-4.03-9-9-9zm-1 5v5l4.28 2.54.72-1.21-3.5-2.08V8H12z"></path></svg>Youtube Music</a><a href="http://127.0.0.1:5173/subscripton"><svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium  sidebarmenu css-i4bv87-MuiSvgIcon-root" focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="WatchLaterIcon"><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2zm4.2 14.2L11 13V7h1.5v5.2l4.5 2.7-.8 1.3z"></path></svg><span>Youtube Kids</span></a><a href="http://127.0.0.1:5173/subscripton"><svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium  sidebarmenu css-i4bv87-MuiSvgIcon-root" focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="ThumbUpIcon"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"></path></svg><span>Youtube Tv</span></a><hr></div><div class="library-history-watch"><a href="http://127.0.0.1:5173/"><svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium  sidebarmenu css-i4bv87-MuiSvgIcon-root" focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="SettingsIcon"><path d="M19.14 12.94c.04-.3.06-.61.06-.94 0-.32-.02-.64-.07-.94l2.03-1.58c.18-.14.23-.41.12-.61l-1.92-3.32c-.12-.22-.37-.29-.59-.22l-2.39.96c-.5-.38-1.03-.7-1.62-.94l-.36-2.54c-.04-.24-.24-.41-.48-.41h-3.84c-.24 0-.43.17-.47.41l-.36 2.54c-.59.24-1.13.57-1.62.94l-2.39-.96c-.22-.08-.47 0-.59.22L2.74 8.87c-.12.21-.08.47.12.61l2.03 1.58c-.05.3-.09.63-.09.94s.02.64.07.94l-2.03 1.58c-.18.14-.23.41-.12.61l1.92 3.32c.12.22.37.29.59.22l2.39-.96c.5.38 1.03.7 1.62.94l.36 2.54c.05.24.24.41.48.41h3.84c.24 0 .44-.17.47-.41l.36-2.54c.59-.24 1.13-.56 1.62-.94l2.39.96c.22.08.47 0 .59-.22l1.92-3.32c.12-.22.07-.47-.12-.61l-2.01-1.58zM12 15.6c-1.98 0-3.6-1.62-3.6-3.6s1.62-3.6 3.6-3.6 3.6 1.62 3.6 3.6-1.62 3.6-3.6 3.6z"></path></svg><span>Settings</span></a><a href="http://127.0.0.1:5173/shorts"><svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium  sidebarmenu css-i4bv87-MuiSvgIcon-root" focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="FlagIcon"><path d="M14.4 6 14 4H5v17h2v-7h5.6l.4 2h7V6z"></path></svg>History</a><a href="http://127.0.0.1:5173/subscripton"><svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium  sidebarmenu css-i4bv87-MuiSvgIcon-root" focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="HelpIcon"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 17h-2v-2h2v2zm2.07-7.75-.9.92C13.45 12.9 13 13.5 13 15h-2v-.5c0-1.1.45-2.1 1.17-2.83l1.24-1.26c.37-.36.59-.86.59-1.41 0-1.1-.9-2-2-2s-2 .9-2 2H8c0-2.21 1.79-4 4-4s4 1.79 4 4c0 .88-.36 1.68-.93 2.25z"></path></svg><span>Help</span></a><a href="http://127.0.0.1:5173/subscripton"><svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium  sidebarmenu css-i4bv87-MuiSvgIcon-root" focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="FeedbackIcon"><path d="M20 2H4c-1.1 0-1.99.9-1.99 2L2 22l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-7 12h-2v-2h2v2zm0-4h-2V6h2v4z"></path></svg><span>Send Feedback</span></a><hr></div></div></div><div class="video-content"><div class="video-gallery"><div class="youtube-thumbnail"><img src="./YouTube-Clone_files/30 minutes.webp" width="100%" height="20%"><div class="youtube-thumbnail-title"><h3>30 Minutes to Start Your Day Right | MORNING MOTIVATION | Powerful Speeches</h3><p>Eddie Pinero</p><div class="channel-views-time"><p>668k Views</p> <span>.</span><p>4 years ago</p></div></div></div><div class="youtube-thumbnail"><img src="./YouTube-Clone_files/fullstack shopping cart.webp" width="100%" height="20%"><div class="youtube-thumbnail-title"><h3>Complete shopping cart with react app | Shopping App Tutorial</h3><p>Lama Dev</p><div class="channel-views-time"><p>60k Views</p> <span>.</span><p>7 months ago</p></div></div></div><div class="youtube-thumbnail"><img src="./YouTube-Clone_files/reactjs tinder clone.webp" width="100%" height="20%"><div class="youtube-thumbnail-title"><h3>Lets Build a Tinder Clone with React Js</h3><p>Clever Programmer</p><div class="channel-views-time"><p>440k Views</p> <span>.</span><p>streamed 2 years ago</p></div></div></div><div class="youtube-thumbnail"><img src="./YouTube-Clone_files/react do and don.jpg" width="100%" height="20%"><div class="youtube-thumbnail-title"><h3>5 Pro-Level React Do and Dont s</h3><p>Traversy Media</p><div class="channel-views-time"><p>668k Views</p> <span>.</span><p>2 months ago</p></div></div></div><div class="youtube-thumbnail"><img src="./YouTube-Clone_files/Deep Focus.webp" width="100%" height="20%"><div class="youtube-thumbnail-title"><h3>Deep Focus Music To Improve Concentration - 12 Hours of Ambient Study Music to Concentrate </h3><p>4K Video Nature - Focus Music</p><div class="channel-views-time"><p>1.7 M Views</p> <span>.</span><p>6 months ago</p></div></div></div><div class="youtube-thumbnail"><img src="./YouTube-Clone_files/Mind of kobe Bryant.webp" width="100%" height="20%"><div class="youtube-thumbnail-title"><h3>The Mind of Kobe Bryant - Hard Work</h3><p>Piotrekz Productions</p><div class="channel-views-time"><p>2.4 M Views</p> <span>.</span><p>3 months ago</p></div></div></div><div class="youtube-thumbnail"><img src="./YouTube-Clone_files/React Ecommerce Series.webp" width="100%" height="20%"><div class="youtube-thumbnail-title"><h3>React Ecommerce Website #41: Find Union Of an Array for Price Filter in React JS | P-1</h3><p>Thapa Technical</p><div class="channel-views-time"><p>2k Views</p> <span>.</span><p>1 Year ago</p></div></div></div><div class="youtube-thumbnail"><img src="./YouTube-Clone_files/Speed Up Your React App By Splitting Code.webp" width="100%" height="20%"><div class="youtube-thumbnail-title"><h3>Speed Up Your React Apps With Code Splitting</h3><p>Web Dev Simplified</p><div class="channel-views-time"><p>72k Views</p> <span>.</span><p>8 month ago</p></div></div></div><div class="youtube-thumbnail"><img src="./YouTube-Clone_files/janisaar.webp" width="100%" height="20%"><div class="youtube-thumbnail-title"><h3>JaniSaar Songs</h3><p>Loop Songs</p><div class="channel-views-time"><p>1.7 Views</p> <span>.</span><p>1 Year ago</p></div></div></div><div class="youtube-thumbnail"><img src="./YouTube-Clone_files/Sajjan raj vaidaya.webp" width="100%" height="20%"><div class="youtube-thumbnail-title"><h3>The Greatest Songs of Sajan Raj Vaidaya</h3><p>PNEPA</p><div class="channel-views-time"><p>200k Views</p> <span>.</span><p>2 weeks ago</p></div></div></div><div class="youtube-thumbnail"><img src="./YouTube-Clone_files/user auth.webp" width="100%" height="20%"><div class="youtube-thumbnail-title"><h3>User Authentication in Web Apps</h3><p>freecodecamp.org</p><div class="channel-views-time"><p>290k Views</p> <span>.</span><p>1 Year ago</p></div></div></div><div class="youtube-thumbnail"><img src="./YouTube-Clone_files/timi ra ma.jpg" width="100%" height="20%"><div class="youtube-thumbnail-title"><h3>Timi ra ma</h3><p>Trishna Gurung</p><div class="channel-views-time"><p>2.6 Views</p> <span>.</span><p>1 Year ago</p></div></div></div><div class="youtube-thumbnail"><img src="./YouTube-Clone_files/numb linkpark.jpg" width="100%" height="20%"><div class="youtube-thumbnail-title"><h3>Num - Linkin Park | In the end, Nothing Else Matters ( Lyric Video )</h3><p>New Divide</p><div class="channel-views-time"><p>1.7 Views</p> <span>.</span><p>3 months ago</p></div></div></div><div class="youtube-thumbnail"><img src="./YouTube-Clone_files/2pac.jpg" width="100%" height="20%"><div class="youtube-thumbnail-title"><h3>2pac Snoop Doggs | Collection</h3><p>LM Nation</p><div class="channel-views-time"><p>1.4 Views</p> <span>.</span><p>2 Year ago</p></div></div></div><div class="youtube-thumbnail"><img src="./YouTube-Clone_files/bigbang tayeang.jpg" width="100%" height="20%"><div class="youtube-thumbnail-title"><h3>TAEYANG - 눈,코,입 (EYES, NOSE, LIPS) M/V</h3><p>BIG BANG</p><div class="channel-views-time"><p>234M Views</p> <span>.</span><p>8 Year ago</p></div></div></div><div class="youtube-thumbnail"><img src="./YouTube-Clone_files/netflix sonny sangha.jpg" width="100%" height="20%"><div class="youtube-thumbnail-title"><h3>NETFLIX REACT.JS Challenge | Day 2 (Complete Frontend &amp; API)</h3><p>Sonng Sangha</p><div class="channel-views-time"><p>152k Views</p> <span>.</span><p>Streamed 1 year agao</p></div></div></div><div class="youtube-thumbnail"><img src="./YouTube-Clone_files/eminem greatest hits.webp" width="100%" height="20%"><div class="youtube-thumbnail-title"><h3>Eminem Greatest Hits 2022</h3><p>Hip-Hop Mix</p><div class="channel-views-time"><p>56k Views</p> <span>.</span><p>3 months ago</p></div></div></div><div class="youtube-thumbnail"><img src="./YouTube-Clone_files/avril lavigne.webp" width="100%" height="20%"><div class="youtube-thumbnail-title"><h3>A.V.R.I.L L.A.V.I.G.N.E GREATEST HITS FULL ALBUM - BEST SONGS OF  A.V.R.I.L L.A.V.I.G.N.E PLAYLIST</h3><p>Top Song Playlist</p><div class="channel-views-time"><p>3.6M Views</p> <span>.</span><p>1 year ago</p></div></div></div><div class="youtube-thumbnail"><img src="./YouTube-Clone_files/guns n roses.jpg" width="100%" height="20%"><div class="youtube-thumbnail-title"><h3>G̲u̲ns N̲ R̲o̲se̲s 2022 Mix</h3><p>DJ Gema</p><div class="channel-views-time"><p>980k Views</p> <span>.</span><p>9 months ago</p></div></div></div><div class="youtube-thumbnail"><img src="./YouTube-Clone_files/avril lavigne complicated.jpg" width="100%" height="20%"><div class="youtube-thumbnail-title"><h3>Avril Lavigne - complicated (Acoustic)</h3><p>Thiago Schmit</p><div class="channel-views-time"><p>253k Views</p> <span>.</span><p>5 years ago</p></div></div></div></div></div></div></div></div></div></div>
+    <script type="module" src="./YouTube-Clone_files/main.jsx"></script>
+  
+
+</body></html>
